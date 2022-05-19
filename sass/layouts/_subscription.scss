@@ -1,0 +1,40 @@
+.subscription__inp {
+    outline: none;
+    display: block;
+    width: 358px;
+    Height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;    
+    background-color: transparent;
+    padding: 15px;
+    color: var(--light-text-color);
+    }
+    
+    .subscription{
+        margin-left: auto;
+    }
+    .subscription__form{
+    display: flex;
+    align-items: baseline;
+    }
+    
+    .subscription__btn {
+        margin-left: 12px;
+    }
+    
+    .subscription__svg{
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        margin-left: 10px;
+        
+    }
+    /* .subscribe-btn::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-image: url("../images/send.svg");
+    }
+     */
+    

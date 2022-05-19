@@ -1,0 +1,30 @@
+.clients-list{
+    display: flex;
+    }
+    
+    .clients-item:not(:first-child){
+    margin-left: var(--typical-margin);
+    }
+    
+    .clients-link{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #AFB1B8;
+    justify-content: center;
+        &:hover{
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+    }
+    
+    
+    .clients-icon{
+    align-self: center;    
+    fill:currentColor;
+    /* height: 40px; */
+    }
+    

@@ -1,0 +1,112 @@
+.header {
+    border-bottom: 1px solid #EEEEEE;
+    .container{
+        display: flex;
+        align-items: center;
+        }
+    }
+    
+    .header__nav-item:not(:last-child){
+        margin-right: 50px;
+    }
+    
+    .header__nav-link--active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+        /* position: absolute;
+        content: "";
+        display: block;
+    background-image: url("../images/hover.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 4px;
+    width: 100%;
+    margin-top: 28px; */
+    }
+    
+    .header__contact:not(:last-child){
+        margin-right: 50px;
+    }
+    
+    .header__logo-studio {
+        color: var(--maintext-color);  
+        margin-right: 93px;  
+        }
+    .header__nav{
+    display: flex;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    }
+    
+    
+    .header__nav-link {
+        color: var(--maintext-color);
+        display: block;
+        position: relative;
+        font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      padding-top: 32px;
+      padding-bottom: 32px;
+        &:hover, &:focus{
+            color: var(--accent-color);
+        }
+    
+        &__active{
+            color:var(--accent-color);    
+        }
+    }
+        
+    
+    /* .header__nav-link.current{
+    color:var(--accent-color);
+    }
+     */
+    .header__contacts {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .header__contact-link {
+        display: flex;
+        align-items: center;
+        color: var(--secondtext-color);
+        font-weight: 500;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        &:hover, &:focus {
+            color: var(--accent-color);
+        }
+        }
+        
+        .header__contact-icon{
+            fill: currentColor;
+            margin-right: 10px;
+        }
+        /* .header__contact-link::before{
+            display: inline-flex;
+            content: "";
+            background-size: contain;
+            background-repeat: no-repeat;
+            align-items: center;
+            margin-right: 10px;
+            height: 30px;
+            width: 30px;
+        } */
+          /*  .header-contact:nth-child(1)>.header__contact-link::before{
+            //background-image: url("../images/envelope.svg");
+        
+        } 
+        
+        .header-contact:nth-child(2)>.header__contact-link::before{
+            background-image: url("../images/smartphone.svg");
+        }  */
