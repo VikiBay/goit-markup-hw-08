@@ -3,9 +3,13 @@
     .container{
         display: flex;
         align-items: center;
+        
         }
     }
     
+    .header__navigation{
+        display: none;
+    }
     .header__nav-item:not(:last-child){
         margin-right: 50px;
     }
@@ -65,14 +69,33 @@
             color:var(--accent-color);    
         }
     }
+    
+    .menu-icon{
+        width: 40px;
+        height: 40px;
         
+        }
+    
+        .menu-btn {
+            margin-left: auto;
+            background-color: transparent;
+            border: none;
+            transition: fill var(--transition-duration) var(--transition-function);
+            cursor: pointer;
+            &:hover {
+            fill: var(--accent-color);
+            }
+            
+        }
     
     /* .header__nav-link.current{
     color:var(--accent-color);
     }
      */
     .header__contacts {
-        display: flex;
+        border: 1px solid black;
+        display: none;
+        // display: flex;
         margin-left: auto;
     }
 

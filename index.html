@@ -14,10 +14,15 @@
 <body>
     
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <a href="/" class="logo-web">Web<span class="logo-studio header__logo-studio">Studio</span></a>
-        <nav>
+            <button type="button" class="menu-btn">
+                <svg class="menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+        <nav class="header__navigation">
             <ul class="header__nav list">
                 <li class="header__nav-item"><a href="./index.html" class="header__nav-link link header__nav-link--active">Студия</a></li>
                 <li class="header__nav-item"><a href="./portfolio.html" class="header__nav-link link ">Портфолио</a></li>
@@ -38,8 +43,26 @@
                 +38 096 111 11 11</a></li>
         </ul>
     </div>
+
+    <div class="mob-menu">
+    <button type="button" class="menu-close-btn">x</button>
+        
+            <ul class="menu__nav list">
+                <li class="menu__nav-item"><a href="./index.html" class="menu__nav-link link menu__nav-link--active">Студия</a></li>
+                <li class="menu__nav-item"><a href="./portfolio.html" class="menu__nav-link link ">Портфолио</a></li>
+                <li class="menu__nav-item"><a href="/" class="menu__nav-link link">Контакты</a></li>
+            </ul>
+        
+        <ul class="menu__contacts list">
+            <li class="header__contact"><a href="mailto:info@devstudio.com" class="menu__contact-link link">
+               info@devstudio.com</a></li>
+            <li class="menu__contact"><a href="tel:+380961111111" class="menu__contact-link link">
+               +38 096 111 11 11</a></li>
+        </ul>
+        </div>    
+    </div>
     </header>
- -->
+
     <main>
         <section class="hero">
             <div class="container">
@@ -49,7 +72,7 @@
         </section>
             
 
-        <!-- <section class="advantages section">
+        <section class="advantages section">
             <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages-list">
@@ -83,37 +106,38 @@
             </li>
         </ul>
         </div>
-        </section> -->
+        </section>
         
 
-        <!-- <section class="whatwedo section">
+        <section class="whatwedo section">
             <div class="container">
             <h2 class="whatwedo-title basic-title">Чем мы занимаемся</h2>
             <ul class="whatwedo-list list">
                 
                 <li class="whatwedo-item" >
-                    <img src="./images/actions1.jpg" alt="Десктопные приложения" width="370" class="whatwedo-img">
+                    <img srcset="./images/actions1.jpg 1x, ./images/actions1-2x.jpg 2x" alt="Десктопные приложения" width="370" class="whatwedo-img">
                     <p class="whatwedo-item-title h3">Десктопные приложения</p>
                 </li>
                 <li class="whatwedo-item" >
-                   <img src="./images/actions2.jpg" alt="Мобильные приложения" width="370" class="whatwedo-img">
+                   <img srcset="./images/actions2.jpg 1x, ./images/actions2-2x.jpg 2x" alt="Мобильные приложения" width="370" class="whatwedo-img">
                     <p class="whatwedo-item-title h3">Мобильные приложения</p>
                 </li>
                 <li class="whatwedo-item" >
-                    <img src="./images/actions3.jpg" alt="Дизайнерские решения" width="370" class="whatwedo-img">
+                    <img srcset="./images/actions3.jpg 1x, ./images/actions3-2x.jpg 2x" alt="Дизайнерские решения" width="370" class="whatwedo-img">
                     <p class="whatwedo-item-title h3">Дизайнерские решения</p>
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container">
             <h2 class="team-title basic-title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list-item list">
                     <div class="team-description">
-                    <img src="./images/team1.jpg" alt="Дизайнер" width="270" class="team-list-photo">
+                    <img srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x" alt="Дизайнер" width="270" class="team-list-photo">
+                    <!-- <img src="./images/team1.jpg" alt="Дизайнер" width="270" class="team-list-photo"> -->
                     <div class="team-desctiption-text">
                     <p class="team-list-header">Игорь Демьяненко</p>
                     <p class="team-list-text">Product Designer</p>
@@ -144,7 +168,8 @@
                 </li>
                 <li class="team-list-item list">
                     <div class="team-description">
-                    <img src="./images/team2.jpg" alt="Разработчик" width="270" class="team-list-photo">
+                    <img srcset="./images/team2.jpg 1x, ./images/team2-2x.jpg 2x" alt="Разработчик" width="270" class="team-list-photo">
+                    <!-- <img src="./images/team2.jpg" alt="Разработчик" width="270" class="team-list-photo"> -->
                     <div class="team-desctiption-text">
                     <h3 class="team-list-header">Ольга Репина</h3>
                     <p class="team-list-text">Frontend Developer</p>
@@ -175,7 +200,8 @@
                 </li>
                 <li class="team-list-item list">
                     <div class="team-description">
-                    <img src="./images/team3.jpg" alt="Маркетолог" width="270" class="team-list-photo">
+                    <img srcset="./images/team3.jpg 1x, ./images/team3-2x.jpg 2x" alt="Маркетолог" width="270" class="team-list-photo">
+                    <!-- <img src="./images/team3.jpg" alt="Маркетолог" width="270" class="team-list-photo"> -->
                     <div class="team-desctiption-text">
                     <h3 class="team-list-header">Николай Тарасов</h3>
                     <p class="team-list-text">Marketing</p>
@@ -206,7 +232,8 @@
                 </li>
                 <li class="team-list-item list">
                     <div class="team-description">
-                    <img src="./images/team4.jpg" alt="UI дизайнер" width="270" class="team-list-photo">
+                    <img srcset="./images/team4.jpg 1x, ./images/team4-2x.jpg 2x" alt="UI дизайнер" width="270" class="team-list-photo">
+                    <!-- <img src="./images/team4.jpg" alt="UI дизайнер" width="270" class="team-list-photo"> -->
                         <div class="team-desctiption-text">
                     <h3 class="team-list-header">Михаил Ермаков</h3>
                     <p class="team-list-text">UI Designer</p>
@@ -237,9 +264,9 @@
                 </li>
             </ul>
         </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="clients section">
+        <section class="clients section">
             <div class="container">
                 <h2 class="basic-title">Постоянные клиенты</h2>
                 <ul class="clients-list list">
@@ -287,11 +314,12 @@
                     </li>
                 </ul>
             </div>
-        </section>         -->
+        </section>        
     </main>
     
-        <!-- <footer class="footer">
-            <div class="container footer__wrap">
+        <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__contacts-social">
                 <div class="footer__contacts">
                 <a href="/" class="logo-web footer__logo-web">Web<span class="logo-studio footer__logo-studio">Studio</span></a>
                 <address>
@@ -328,6 +356,7 @@
                     </a></li>    
                     </ul>    
                 </div>
+                </div>
 
                 <div class="subscription">
                 <p class="footer__title h3">Подпишитесь на рассылку</p>
@@ -342,7 +371,7 @@
                 </div>
             </div>
 
-        </footer> -->
+        </footer>
         
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
