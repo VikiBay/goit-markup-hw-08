@@ -17,11 +17,12 @@
     <header class="header">
         <div class="container">
             <a href="/" class="logo-web">Web<span class="logo-studio header__logo-studio">Studio</span></a>
-            <button type="button" class="menu-btn">
-                <svg class="menu-icon">
+            <button type="button" class="mob-menu_btn-open">
+                <svg class="mob-menu__icon">
                     <use href="./images/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
+            
         <nav class="header__navigation">
             <ul class="header__nav list">
                 <li class="header__nav-item"><a href="./index.html" class="header__nav-link link header__nav-link--active">Студия</a></li>
@@ -44,22 +45,39 @@
         </ul>
     </div>
 
-    <div class="mob-menu">
-    <button type="button" class="menu-close-btn">x</button>
-        
-            <ul class="menu__nav list">
-                <li class="menu__nav-item"><a href="./index.html" class="menu__nav-link link menu__nav-link--active">Студия</a></li>
-                <li class="menu__nav-item"><a href="./portfolio.html" class="menu__nav-link link ">Портфолио</a></li>
-                <li class="menu__nav-item"><a href="/" class="menu__nav-link link">Контакты</a></li>
+    <div class="mob-menu is-hidden">
+        <div class="container">
+            <button type="button" class="mob-menu__btn-close btn-close">
+                <svg class="mob-menu__btn-close-img">
+                    <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                </svg>
+                </button> 
+
+            <div class="mob-menu__top">
+                <ul class="mob-menu__nav list">
+                <li class="mob-menu__nav-item"><a href="./index.html" class="mob-menu__nav-link link mob-menu__nav-link--active">Студия</a></li>
+                <li class="mob-menu__nav-item"><a href="./portfolio.html" class="mob-menu__nav-link link ">Портфолио</a></li>
+                <li class="mob-menu__nav-item"><a href="/" class="mob-menu__nav-link link">Контакты</a></li>
             </ul>
-        
-        <ul class="menu__contacts list">
-            <li class="header__contact"><a href="mailto:info@devstudio.com" class="menu__contact-link link">
-               info@devstudio.com</a></li>
-            <li class="menu__contact"><a href="tel:+380961111111" class="menu__contact-link link">
-               +38 096 111 11 11</a></li>
+            </div>
+
+            <div class="mob-menu__bottom">
+        <ul class="mob-menu__contacts list">
+            <li class="mob-menu__contact-item"><a href="mailto:info@devstudio.com" class="mob-menu__contact-phone link">
+                +38 096 111 11 11</a></li>
+            <li class="mob-menu__contact-item"><a href="tel:+380961111111" class="mob-menu__contact-mail link">
+                info@devstudio.com
+               </a></li>
         </ul>
-        </div>    
+        <ul class="mob-menu__social list">
+            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link">Instagram</a></li>
+            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link">Twitter</a></li>
+            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link">Facebook</a></li>
+            <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link">LinkedIn</a></li>
+        </ul>
+            </div>
+        </div>  
+        </div>  
     </div>
     </header>
 
@@ -67,7 +85,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="hero-btn calltoaction-btn " data-modal-open >Заказать услугу</button>
+            <button type="button" class="hero-btn calltoaction-btn" data-modal-open >Заказать услугу</button>
             </div>
         </section>
             
@@ -417,13 +435,14 @@
                             </div>    
                                 <button type="submit" class="calltoaction-btn appl-btn">Отправить</button>
                 </form>
-                   <button class="modal-close-btn" data-modal-close>
-                    <svg class="modal-close-btn-img">
+                   <button class="modal-btn-close btn-close" data-modal-close>
+                    <svg class="modal-btn-close-img">
                         <use href="./images/symbol-defs.svg#icon-close-black"></use>
                     </svg>
                 </button>  
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>
