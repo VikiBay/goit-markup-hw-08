@@ -103,7 +103,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -227,14 +227,17 @@ body {
   margin-right: 50px;
 }
 
-.header__logo-studio {
-  color: var(--maintext-color);
+.header__logo-web {
   margin-right: 88px;
 }
 @media screen and (min-width: 1200px) {
-  .header__logo-studio {
+  .header__logo-web {
     margin-right: 93px;
   }
+}
+
+.header__logo-studio {
+  color: var(--maintext-color);
 }
 
 .header__nav {
@@ -565,10 +568,23 @@ margin-bottom: auto;} */
   }
 }
 
-.advantages-icon {
+.img-wrap {
+  display: block;
+  background-color: var(--background-medium-color);
   width: 100%;
-  height: auto;
+  height: 120px;
   margin-bottom: var(--typical-margin);
+}
+
+/* .advantages-icon{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);} */
+.ad-img {
+  /*  position: absolute;
+   top: 50%;
+   left: 50%; */
 }
 
 .whatwedo {
@@ -993,9 +1009,21 @@ margin-bottom: auto;} */
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 }
+@media screen and (min-width: 728px) {
+  .portfolio-description {
+    flex-grow: 1;
+  }
+}
 
 .portfolio-link {
   text-decoration: none;
+}
+@media screen and (min-width: 728px) {
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 .portfolio-link:hover {
   display: block;

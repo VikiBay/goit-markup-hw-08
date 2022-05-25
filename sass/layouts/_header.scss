@@ -21,6 +21,7 @@
         @media screen and (min-width:768px) {
         display:block;
         }
+        
     }
 
        .header__nav-item:not(:last-child){
@@ -57,13 +58,17 @@
         margin-right: 50px;
     }
     
-    .header__logo-studio {
-        color: var(--maintext-color); 
+    .header__logo-web {
         margin-right: 88px; 
         @media screen and (min-width:1200px) {
-        margin-right: 93px;      
+            margin-right: 93px;      
         } 
-        }
+    }
+
+    .header__logo-studio {
+        color: var(--maintext-color); 
+    }
+
     .header__nav{
     display: flex;
     font-weight: 500;
