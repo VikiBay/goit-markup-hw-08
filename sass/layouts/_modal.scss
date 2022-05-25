@@ -19,12 +19,13 @@ transform: translate(-50%, -50%);
 background-color: var(--background-main-color);
 border-radius: 4px;
 width: 90vw;
-min-height: 581px;
+height: 609px;
 @media screen and (min-width:768px) {
 width: 450px;
 }
-// width: 528px;
-// 
+@media screen and (min-width:768px) {
+width: 528px;}
+
 }
 
 .application-title{
@@ -118,13 +119,20 @@ color: var(--secondtext-color);
 
 .check-label{
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em; 
     color: var(--secondtext-color);
     display: flex;
     align-items: baseline;
     justify-content: center;
+    @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
+    
+
+
 }
 
 /* .check-label::before{

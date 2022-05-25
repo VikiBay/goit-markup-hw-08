@@ -95,7 +95,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -104,7 +103,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -171,9 +170,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header .container {
-    border: 1px solid green;
     justify-content: space-between;
   }
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .header__navigation {
@@ -394,12 +399,10 @@ margin-bottom: auto;} */
 }
 
 .header__contacts {
-  border: 1px solid black;
   display: none;
 }
 @media screen and (min-width: 768px) {
   .header__contacts {
-    border: 1px solid yellow;
     display: block;
     margin-left: auto;
   }
@@ -520,10 +523,6 @@ margin-bottom: auto;} */
     font-size: 44px;
     line-height: 1.36;
   }
-}
-
-.advantages {
-  border: 1px solid red;
 }
 
 .advantages-list {
@@ -694,7 +693,6 @@ margin-bottom: auto;} */
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
   margin-bottom: -30px;
   margin-left: -30px;
 }
@@ -768,7 +766,6 @@ margin-bottom: auto;} */
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts-social {
-    border: 1px solid white;
     align-items: baseline;
   }
 }
@@ -859,9 +856,6 @@ margin-bottom: auto;} */
   color: var(--light-text-color);
 }
 
-.subscription {
-  border: 1px dotted blue;
-}
 @media screen and (min-width: 1200px) {
   .subscription {
     margin-left: auto;
@@ -1046,11 +1040,16 @@ margin-bottom: auto;} */
   background-color: var(--background-main-color);
   border-radius: 4px;
   width: 90vw;
-  min-height: 581px;
+  height: 609px;
 }
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
   }
 }
 
@@ -1144,13 +1143,19 @@ margin-bottom: auto;} */
 
 .check-label {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondtext-color);
   display: flex;
   align-items: baseline;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .check-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 /* .check-label::before{
