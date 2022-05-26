@@ -104,6 +104,10 @@
      padding-top: 48px;
      padding-bottom: 48px;
     
+     @media screen and (min-width:768px) {
+         display: none;
+     }
+    
     //  padding: 21px 25px 48px 40px;
      .container{
         overflow-y: auto;
@@ -121,11 +125,7 @@
         pointer-events: none;
     }
 
-    /* .mob-menu__nav{
-    margin-bottom: auto;} */
-.mob-menu__top {
     
-}
     .mob-menu__nav-item {
     font-weight: 500;
     font-size: 40px;

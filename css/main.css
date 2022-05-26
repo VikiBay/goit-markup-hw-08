@@ -265,6 +265,11 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .mob-menu .container {
   overflow-y: auto;
   display: flex;
@@ -280,8 +285,6 @@ body {
   pointer-events: none;
 }
 
-/* .mob-menu__nav{
-margin-bottom: auto;} */
 .mob-menu__nav-item {
   font-weight: 500;
   font-size: 40px;
@@ -733,12 +736,6 @@ margin-bottom: auto;} */
 
 .footer {
   background: var(--background-dark-color);
-  padding: 60px 15px;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 60px 89px 60px 76px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer {
@@ -789,6 +786,12 @@ margin-bottom: auto;} */
   justify-content: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__social-list {
+    margin-bottom: 0;
+  }
+}
+
 .footer__social-item:not(:first-child) {
   margin-left: 10px;
 }
@@ -838,6 +841,11 @@ margin-bottom: auto;} */
 
 .footer__contact-item:nth-child(3) {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact-item:nth-child(3) {
+    margin-bottom: 0;
+  }
 }
 
 .subscription__inp {
@@ -954,6 +962,7 @@ margin-bottom: auto;} */
   height: 100%;
   transform: translateY(0);
   transition: transform var(--transition-duration) var(--transition-function);
+  overflow-y: auto;
 }
 .portfolio-link:hover .portfolio-overlay {
   transform: translateY(-100%);
