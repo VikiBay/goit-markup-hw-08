@@ -210,6 +210,8 @@
     
     .mob-menu__social{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         color: var(--accent-color);
         // position: relative;
     }

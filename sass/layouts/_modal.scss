@@ -20,10 +20,11 @@ background-color: var(--background-main-color);
 border-radius: 4px;
 width: 90vw;
 height: 609px;
-@media screen and (min-width:768px) {
+@media screen and (min-width:480px) {
 width: 450px;
 }
-@media screen and (min-width:768px) {
+
+@media screen and (min-width:1200px) {
 width: 528px;}
 
 }

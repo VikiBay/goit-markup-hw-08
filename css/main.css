@@ -88,6 +88,7 @@ body {
 .section {
   padding-bottom: var(--typical-padding);
   padding-top: var(--typical-padding);
+  border: 1px solid red;
 }
 
 .container {
@@ -95,6 +96,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  border: 1px solid green;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -366,6 +368,8 @@ margin-bottom: auto;} */
 
 .mob-menu__social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   color: var(--accent-color);
 }
 
@@ -518,13 +522,13 @@ margin-bottom: auto;} */
 }
 
 .advantages-list {
-  margin-left: -30px;
   margin-bottom: -30px;
 }
 @media screen and (min-width: 768px) {
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 .advantages-list-text {
@@ -534,12 +538,12 @@ margin-bottom: auto;} */
 
 .advantages-item {
   margin-bottom: 30px;
-  margin-left: 30px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .advantages-item {
     flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -623,11 +627,11 @@ margin-bottom: auto;} */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
-  margin-left: 30px;
 }
 @media screen and (min-width: 768px) {
   .team-list-item {
     flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -943,15 +947,6 @@ margin-bottom: auto;} */
 .portfolio-img-wrap {
   position: relative;
   overflow: hidden;
-  /* padding: 63px 24px; */
-}
-
-.portfolio-overlay-content {
-  padding: 63px 24px;
-  Font-size: 18px;
-  Line-height: 1.56;
-  color: var(--li ght-text-color);
-  letter-spacing: 0.03em;
 }
 
 .portfolio-overlay {
@@ -1010,6 +1005,14 @@ margin-bottom: auto;} */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-overlay-content {
+  padding: 63px 24px;
+  Font-size: 18px;
+  Line-height: 1.56;
+  color: var(--light-text-color);
+  letter-spacing: 0.03em;
+}
+
 .portfolio-btn-item {
   display: flex;
   height: 38px;
@@ -1049,12 +1052,12 @@ margin-bottom: auto;} */
   width: 90vw;
   height: 609px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
   }
