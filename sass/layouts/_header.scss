@@ -4,19 +4,12 @@
         display: flex;
         align-items: center;
     @media screen and (min-width:768px){
-        
-        justify-content: space-between;
+        // justify-content: space-between;
     }
         }
     }
     
-    .navigation-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-grow: 1;
-    }
-    .header__navigation{
+     .header__navigation{
         display: none;
         @media screen and (min-width:768px) {
         display:block;
@@ -55,7 +48,10 @@
         }
     }
     .header__contact:not(:last-child){
-        margin-right: 50px;
+        @media screen and (min-width:1200px){
+        margin-right: 50px;    
+        }
+        
     }
     
     .header__logo-web {
@@ -244,11 +240,9 @@
     }
 }
     .header__contacts {
-        
         display: none;
         
         @media screen and (min-width:768px) {
-            
             display: block;
             margin-left: auto;
         }
