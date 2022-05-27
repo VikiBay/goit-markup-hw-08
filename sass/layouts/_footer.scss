@@ -23,14 +23,19 @@
         justify-content: space-between;
         }    
         
-    @media screen and (min-width: 1200px){
-        
+        @media screen and (min-width: 1200px){
         align-items: baseline;  
     }
     }
-                
+
+    &__contacts {
+        @media screen and (min-width: 1200px){
+        // border: 1px solid red;
+        text-align: left;   
+        }
+    }
     
-        
+            
     &__title{
     color: var(--light-text-color);
     margin-bottom: 20px;
